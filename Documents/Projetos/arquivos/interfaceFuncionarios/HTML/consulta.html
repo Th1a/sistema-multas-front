@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Consultar Funcionário</title>
+<link rel="stylesheet" href="../CSS/geral.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Consultar Funcionário</h1>
+
+    <nav>
+        <a href="gestaofuncionarios.html">Home</a>
+       
+    </nav>
+</header>
+
+<main>
+
+<div class="card-form">
+
+<h2>Buscar Funcionário</h2>
+
+<form id="formFuncionario">
+
+<div class="form-group">
+<label>Matrícula</label>
+<input type="text" id="matricula" name="matricula" required>
+</div>
+
+<button class="btn"  type="submit">Buscar</button>
+
+<div id="resultado" style="display:none; margin-top:20px;">
+
+    <h3>Dados do Funcionário</h3>
+
+    <p><strong>Nome:</strong> <span id="nome"></span></p>
+    <p><strong>Matrícula:</strong> <span id="matriculaResultado"></span></p>
+    <p><strong>Cargo:</strong> <span id="cargo"></span></p>
+    <p><strong>Departamento:</strong> <span id="departamento"></span></p>
+    <p><strong>Email:</strong> <span id="email"></span></p>
+
+</div>
+
+</form>
+
+</div>
+
+
+
+</main>
+
+<footer>
+© MADE BY TH
+</footer>
+<script src="/arquivos/interfaceFuncionarios/JS/consult.js"></script>
+</body>
+</html>

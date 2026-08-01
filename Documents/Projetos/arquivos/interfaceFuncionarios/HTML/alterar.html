@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Editar Funcionário</title>
+<link rel="stylesheet" href="../CSS/geral.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Editar Funcionário</h1>
+
+    <nav>
+        <a href="gestaofuncionarios.html">Home</a>
+        
+    </nav>
+</header>
+
+<main>
+
+<div class="card-form">
+
+<h2>Alterar Dados</h2>
+
+<form id = "formEditar">
+
+
+
+<div class="form-group">
+<label>Matrícula</label>
+<input type="text" name="matricula" id ="matricula" required>
+</div>
+
+<div class="form-group">
+<label>Novo Nome</label>
+<input type="text" id="nome" id = "nome" name="nome">
+</div>
+
+<div class="form-group">
+<label>Novo Cargo</label>
+<input type="text" id="cargo" id="cargo" name="cargo">
+</div>
+
+<div class="form-group">
+<label for="departamento">Novo Departamento</label>
+<input type="text" id="departamento" name = "departamento">
+
+</div>
+
+<div class="form-group">
+<label>Novo Email</label>
+<input type="email" id="email" name="email">
+</div>
+
+<div class="form-group">
+<label>Nova Senha</label>
+<input type="password"  id ="senha" name="senha">
+</div>
+
+
+<button class="btnlocalizar" id="btnLocalizar" type="button">Localizar</button>
+
+<button class="btn" type="submit">Salvar Alterações</button>
+
+</form>
+
+</div>
+
+</main>
+
+<footer>
+© MADE BY TH
+</footer>
+
+<script src="../JS/alterar.js"></script>
+
+
+</body>
+</html>

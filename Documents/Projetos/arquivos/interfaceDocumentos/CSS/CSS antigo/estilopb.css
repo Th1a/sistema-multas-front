@@ -1,0 +1,128 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f593;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    background-color: #2c6e2e;
+    color: rgb(221, 220, 220);
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    
+    
+    text-align: center;
+}
+header > h1 {
+    font-size: 36px;
+    margin-top: 45px;
+}
+
+main {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffffff;
+    height: 200px;
+    margin-bottom: 180px;
+    
+    
+}
+
+
+main > section {
+
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+
+}
+
+
+.label {
+
+    font-size: 18px;
+    margin: 15px 10px;
+
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.escreva {
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    margin-left: 5px;
+    display: flex;
+}
+
+
+nav {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    
+}
+
+nav a:hover {
+    background-color: #33f104;
+
+}
+
+nav a {
+    
+    color: white;
+    margin-top: 22px;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #398b3c;
+    padding: 10px ;  
+    align-items: left;  
+    
+}
+
+#protocolo {
+    margin-left: 45px;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #2c6e2e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#consultar:hover {
+    background-color: #225922;
+}
+
+
+
+
