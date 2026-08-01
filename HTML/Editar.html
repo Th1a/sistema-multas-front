@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Editar Processo — Gontijo</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/Editar.css">
+</head>
+<body>
+<header>
+  <div class="header-logo">
+    <div class="logo-box">GONTIJO</div>
+    <span class="header-title">Sistema de Protocolos</span>
+  </div>
+  <nav><a href="indexMulta.html">← Voltar</a></nav>
+</header>
+<div class="breadcrumb">Multas › <span>Editar Processo</span></div>
+
+<main>
+  <div class="page-wrapper">
+
+    
+    <div class="card">
+      <div class="card-header">
+        <span>🔍</span>
+        <h2>Localizar Processo</h2>
+      </div>
+      <div class="card-body">
+        <div class="search-row">
+          <div class="form-group">
+            <label>Identificador</label>
+            <input type="text" id="identificador" placeholder="Ex: ID13033">
+          </div>
+          <button class="btn-search" onclick="localizar()">Localizar</button>
+        </div>
+        <div class="status-msg" id="statusBusca"></div>
+      </div>
+    </div>
+
+    
+    <div class="card form-card" id="formCard">
+      <div class="card-header verde">
+        <span>✏️</span>
+        <h2>Alterar Dados</h2>
+      </div>
+
+      <div class="card-body">
+        <div class="grid-2">
+          <div class="form-group">
+            <label>Local Atual</label>
+            <input type="text" id="localAtual" placeholder="Local atual">
+          </div>
+          <div class="form-group">
+            <label>Local Anterior</label>
+            <input type="text" id="localAnterior" placeholder="Local anterior">
+          </div>
+          <div>
+
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Status do Processo</label>
+          <select id="statusProcesso">
+            <option value="">— Manter status atual —</option>
+            <option value="2">— Aguardando Apuração —</option>
+            <option value="3">— Aguardando Defesa —</option>
+            <option value="4">— Defesa Previa —</option>
+            <option value="5">— Recurso Jari 1º —</option>
+            <option value="6">— Recurso Cetran 2º —</option>
+            <option value="7">— Indeferido —</option>
+            <option value="8">— Deferido —</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Observação</label>
+          <textarea id="observacao" rows="3" placeholder="Observação..."></textarea>
+        </div>
+
+        <div class="status-msg" id="statusForm"></div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="actions">
+        <button class="btn btn-primary" onclick="salvar()">💾 Salvar Alterações</button>
+        <button class="btn btn-danger" onclick="excluir()" title="Excluir processo">🗑️</button>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>© <strong>GONTIJO</strong> — Sistema Interno de Gestão</footer>
+<script src="config.js"></script>
+<script src="../JS/Editar.js"></script>
+</body>
+</html>

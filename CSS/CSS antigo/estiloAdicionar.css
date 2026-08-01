@@ -1,0 +1,140 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f593;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #2c6e2e;
+    color: rgb(221, 220, 220);
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+    
+    
+   
+}
+
+main {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffffff;
+    margin-bottom: 150px;
+    gap: 10px;
+    max-width: 980px;
+}
+main > section {
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    height: 150px;    
+    
+    
+
+}
+.label {
+
+    font-size: 18px;
+
+    
+    
+}
+.escreva {
+    width: 130px;
+    height: 30px;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.botao:hover {
+    background-color: #225922;
+}
+nav {
+    display: flex;
+    gap: 10px;
+   
+    
+}
+nav a:hover {
+   background:#33f104;
+    color:black;
+
+}
+nav a {
+    
+    color: white;
+    padding:8px 14px;
+    
+    text-decoration: none;
+    background-color: #398b3c;
+    align-items: left;  
+    transition: 0.25s;
+    border-radius:6px;
+    
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+
+    width: 120px;
+    height: 40px;
+
+    background: white;
+    border-radius: 15px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    text-decoration: none;
+    color: #2c6e2e;
+
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+
+    transition: .25s;
+}
+
+.card:hover{
+
+    
+
+    background:#2c6e2e;
+    color:white;
+
+    box-shadow:0 10px 20px rgba(0,0,0,0.25);
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}

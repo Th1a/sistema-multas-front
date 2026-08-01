@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adicionar Processo — Gontijo</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/Adicionar.css">
+</head>
+<body>
+<header>
+  <div class="header-logo">
+    <div class="logo-box">GONTIJO</div>
+    <span class="header-title">Sistema de Protocolos</span>
+  </div>
+  <nav><a href="indexMulta.html">← Voltar</a></nav>
+</header>
+<div class="breadcrumb">Multas › <span>Adicionar Processo</span></div>
+
+<main>
+  <div class="card-form">
+    <div class="card-header">
+      <span>📄</span>
+      <h2>Novo Processo de Multa</h2>
+    </div>
+
+    <div class="card-body">
+      <div class="form-group">
+        <label>Identificador da Multa</label>
+        <input type="text" id="identificador" placeholder="Ex: ID13033" required>
+      </div>
+      <div class="form-group">
+        <label>Observação</label>
+        <textarea id="observacao" rows="4" placeholder="Descreva o motivo da multa..."></textarea>
+      </div>
+      <div class="status-info">
+        ✅ Status inicial definido automaticamente como <strong>Aguardando Defesa e Apuração</strong>
+      </div>
+    </div>
+
+    <div class="status-msg" id="statusMsg"></div>
+    <div class="divider"></div>
+
+    <div class="actions">
+      <button class="btn btn-primary" onclick="cadastrar()">📄 Cadastrar Processo</button>
+    </div>
+  </div>
+</main>
+
+<footer>© <strong>GONTIJO</strong> — Sistema Interno de Gestão</footer>
+<script src="config.js"></script>
+<script src = "../JS/Adicionar.js"></script>
+</body>
+
+</html>

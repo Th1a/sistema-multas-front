@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Localizar Processo — Gontijo</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/Localizar.css">
+</head>
+<body>
+<header>
+  <div class="header-logo">
+    <div class="logo-box">GONTIJO</div>
+    <a href="index.html"></a><span class="header-title">Sistema de Protocolos</span>
+  </div>
+  <nav><a href="indexCaixas.html">← Voltar</a></nav>
+</header>
+<div class="breadcrumb">Caixas › <span>Indentificar Caixas</span></div>
+
+<main>
+  <div class="page-wrapper">
+
+    <div class="card">
+      <div class="card-header">
+        <span>🔎</span>
+        <h2>Indentificar Caixas</h2>
+      </div>
+      <div class="card-body">
+        <div class="search-row">
+          <div class="form-group">
+            <label>Nome da Caixa</label>
+            <input type="text" id="nome" placeholder="Ex: Caixa 1">
+          </div>
+          <button class="btn-search" onclick="localizar()">Localizar</button>
+        </div>
+        <div class="status-msg" id="statusMsg"></div>
+      </div>
+    </div>
+
+    <div class="card resultado" id="resultado">
+      <div class="card-header verde">
+        <span style="color:var(--amarelo)">📋</span>
+        <h2>Dados do Processo</h2>
+      </div>
+      <div class="card-body">
+        <div class="field-row">
+          <span class="field-label">Nome da Caixa</span>
+          <span class="field-value" id="r-nome">—</span>
+        
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>© <strong>GONTIJO</strong> — Sistema Interno de Gestão</footer>
+<script src="config.js"></script>
+<script src="../JS/IdentificarCaixa.js"></script>
+</body>
+</html>

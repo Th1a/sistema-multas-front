@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/estilolocalizar.css">
+    <title>Procoto | Localizar</title>
+    
+</head>
+<body>
+    <header>
+        <h1>Protocolos | Localizar</h1>
+
+        <nav>
+            <a href="index.html">Tela Inicial</a>
+            <a href="Adicionar.html">Adicionar</a>
+            <a href="Editar.html">Editar</a>
+            <a href="Excluir.html">Excluir</a>
+        </nav>
+
+    </header>
+    <main>
+        <section id ="secao">
+            <label for="id" class = "label">ID:</label>
+            <input type="text" id = "id" class = "escreva">          
+
+            <button width="100px" class ="card" onclick="localizar()">Consultar</button>
+        </section>
+        <div id="resultado" width ="100px" class = "hidden"></div>
+    </main>
+
+    <footer>
+        <h2>&copy; MADE BY TH</h2>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>

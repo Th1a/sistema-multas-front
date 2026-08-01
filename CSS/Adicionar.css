@@ -1,0 +1,118 @@
+:root {
+    --verde: #1a5c1e; --verde-meio: #2c6e2e;
+    --amarelo: #f5c800; --amarelo-hover: #e0b400;
+    --branco: #ffffff; --cinza-bg: #f0f0f0;
+    --cinza-borda: #d0d0d0; --cinza-texto: #555;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Barlow', sans-serif; background: var(--cinza-bg); min-height: 100vh; display: flex; flex-direction: column; }
+  header { background: var(--verde); color: var(--branco); padding: 0 32px; height: 64px; display: flex; align-items: center; justify-content: space-between; border-bottom: 4px solid var(--amarelo); }
+  .header-logo { display: flex; align-items: center; gap: 12px; }
+  .logo-box { background: var(--amarelo); color: var(--verde); font-family: 'Barlow Condensed', sans-serif; font-size: 20px; font-weight: 800; padding: 4px 10px; border-radius: 4px; }
+  .header-title { font-size: 18px; font-weight: 600; }
+  nav a { text-decoration: none; color: var(--amarelo); font-weight: 600; font-size: 14px; padding: 8px 16px; border: 2px solid var(--amarelo); border-radius: 6px; transition: 0.2s; }
+  nav a:hover { background: var(--amarelo); color: var(--verde); }
+  .breadcrumb { background: var(--verde-meio); color: rgba(255,255,255,0.7); font-size: 13px; padding: 10px 32px; }
+  .breadcrumb span { color: var(--amarelo); font-weight: 600; }
+  main { flex: 1; display: flex; justify-content: center; align-items: flex-start; padding: 40px 24px; }
+  .card-form { background: var(--branco); width: 100%; max-width: 560px; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 16px rgba(0,0,0,0.1); }
+  .card-header { background: var(--amarelo); padding: 18px 24px; display: flex; align-items: center; gap: 10px; }
+  
+  .card-header h2 { font-size: 16px; 
+    font-weight: 800; 
+    color: var(--verde); 
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+   }
+  
+  .card-body { padding: 28px 24px; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 18px; }
+  
+  .form-group { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 6px; }
+  
+  .form-group label { font-size: 12px; 
+    font-weight: 700; 
+    color: var(--cinza-texto); 
+    text-transform: uppercase; 
+    letter-spacing: 0.8px;
+   }
+
+  .form-group input, .form-group textarea {
+    padding: 11px 14px; border: 2px solid var(--cinza-borda); 
+    border-radius: 8px;
+    font-family: 'Barlow', sans-serif; 
+    font-size: 15px; color: #222;
+    transition: 0.2s; background: #fafafa; 
+    resize: none;
+  }
+  .form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--verde-meio); 
+    background: var(--branco);
+    box-shadow: 0 0 0 3px rgba(44,110,46,0.12);
+  }
+  .status-info {
+    background: #e8f5e9;
+     border-left: 4px solid var(--verde-meio);
+    padding: 12px 16px; 
+    border-radius: 8px; 
+    font-size: 13px;
+    color: var(--verde-meio);
+     font-weight: 600;
+  }
+  .divider { height: 1px; 
+    background: var(--cinza-borda); }
+
+  .actions { padding: 20px 24px; }
+
+  .btn { width: 100%; 
+    padding: 14px; border: none; 
+    border-radius: 8px; 
+    font-family: 'Barlow', sans-serif; font-size: 15px; 
+    font-weight: 700; 
+    cursor: pointer;
+     transition: 0.2s; }
+
+  .btn-primary { 
+    background: var(--verde-meio);
+     color: var(--branco); 
+  }
+  .btn-primary:hover { 
+
+    background: var(--verde); 
+    transform: translateY(-1px); 
+  }
+  .status-msg { 
+    margin: 0 24px 16px; 
+    padding: 12px 16px; 
+    border-radius: 8px; 
+    font-size: 14px; 
+    font-weight: 600; 
+    display: none; 
+  }
+  .status-msg.erro {
+
+     background: #fdecea;
+      color: #c0392b; 
+      border-left: 4px solid #c0392b;
+       display: block; 
+  }
+  .status-msg.sucesso { background: #e8f5e9; 
+    color: var(--verde);
+    border-left: 4px solid var(--verde); 
+    display: block; 
+  }
+  footer 
+  { background: var(--verde);
+     color: rgba(255,255,255,0.5); 
+     text-align: center; 
+     padding: 16px; 
+     font-size: 13px; 
+     border-top: 3px solid var(--amarelo);
+ }
+  footer strong { color: var(--amarelo); }

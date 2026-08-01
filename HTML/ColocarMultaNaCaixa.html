@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Localizar Processo — Gontijo</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/Localizar.css">
+</head>
+<body>
+<header>
+  <div class="header-logo">
+    <div class="logo-box">GONTIJO</div>
+    <span class="header-title">Sistema de Protocolos</span>
+  </div>
+  <nav><a href="indexCaixas.html">← Voltar</a></nav>
+</header>
+<div class="breadcrumb">Multas › <span>Localizar Processo</span></div>
+
+<main>
+  <div class="page-wrapper">
+
+    <div class="card">
+      <div class="card-header">
+        <span>🔎</span>
+        <h2>Buscar por Identificador</h2>
+      </div>
+      <div class="card-body">
+        <div class="search-row">
+          <div class="form-group">
+            <label>Identificador</label>
+            <input type="text" id="identificador" placeholder="Ex: ID13033">
+          </div>
+          <button class="btn-search" onclick="localizar()">Localizar</button>
+        </div>
+        <div class="status-msg" id="statusMsg"></div>
+      </div>
+    </div>
+
+    <div class="card resultado" id="resultado">
+      <div class="card-header verde">
+        <span style="color:var(--amarelo)">📋</span>
+        <h2>Dados do Processo</h2>
+      </div>
+      <div class="card-body">
+        <div class="field-row">
+          <span class="field-label">Identificador</span>
+          <span class="field-value" id="r-identificador">—</span>
+        </div>
+        <div class="field-row">
+          <span class="field-label">Status</span>
+          <span class="field-value"><span class="badge" id="r-status">—</span></span>
+        </div>
+        <div class="field-row">
+          <span class="field-label">Local Atual</span>
+          <span class="field-value" id="r-localAtual">—</span>
+        </div>
+        <div class="field-row">
+          <span class="field-label">Local Anterior</span>
+          <span class="field-value" id="r-localAnterior">—</span>
+        </div>
+        <div class="field-row">
+          <span class="field-label">Caixa</span>
+          <span class="field-value" id="r-caixa">—</span>
+        </div>
+        <div class="field-row">
+          <span class="field-label">Observação</span>
+          <span class="field-value" id="r-observacao">—</span>
+        </div>
+        <div class="field-row">
+          <span class="field-label">Última Atualização</span>
+          <span class="field-value" id="r-data">—</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>© <strong>GONTIJO</strong> — Sistema Interno de Gestão</footer>
+<script src="config.js"></script>
+<script src="../JS/Localizar.js"></script>
+</body>
+</html>
