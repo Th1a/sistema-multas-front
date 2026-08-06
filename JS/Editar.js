@@ -5,11 +5,11 @@ fetch(`${API}/status-processo`)
   .then(res => res.json())
   .then(lista => {
     const sel = document.getElementById('statusProcesso');
+    sel.innerHTML = '';
     lista.forEach(s => {
       const opt = document.createElement('option');
       opt.value = s.id;
       opt.textContent = s.identificador;
-      sel.innerHTML = '';
       sel.appendChild(opt);
       
     });
