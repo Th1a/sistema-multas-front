@@ -9,6 +9,7 @@ fetch(`${API}/status-processo`)
       const opt = document.createElement('option');
       opt.value = s.id;
       opt.textContent = s.identificador;
+      sel.innerHTML = '';
       sel.appendChild(opt);
       
     });
