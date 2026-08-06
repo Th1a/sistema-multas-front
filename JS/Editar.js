@@ -10,6 +10,7 @@ fetch(`${API}/status-processo`)
       opt.value = s.id;
       opt.textContent = s.identificador;
       sel.appendChild(opt);
+      sel.innerHTML = '';
     });
   })
   .catch(() => console.log('Não foi possível carregar os status'));
